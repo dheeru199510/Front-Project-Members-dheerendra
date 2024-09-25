@@ -36,3 +36,16 @@
   color: #007bff;
 
 }
+@media only screen and (max-width: 768px) {
+  .sidebar{
+    display: none;
+  }
+ 
+}
+
+@media only screen and (max-width: 480px) {
+  .sidebar{
+    display: none;
+  }
+ 
+}

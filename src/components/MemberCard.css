@@ -1,105 +1,110 @@
+/* Base styles for desktop */
 .member-card {
   background-color: #e0ebfb;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
- 
-.members-grid div:nth-of-type(3) {
-    background-color: #fbf1d3;
+}
 
-}
-.members-grid div:nth-of-type(4) {
-  background-color: #fbf1d3;
-}
-.members-grid div:nth-of-type(7) {
-  background-color: #fbf1d3;
- 
-}
+.members-grid div:nth-of-type(3),
+.members-grid div:nth-of-type(4),
+.members-grid div:nth-of-type(7),
 .members-grid div:nth-of-type(8) {
   background-color: #fbf1d3;
- 
 }
 
-  
+.member-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.member-card h3 {
+  margin: 10px 0 5px;
+}
+
+.member-card p {
+  color: #86a2ee;
+  margin-bottom: 20px;
+}
+
+.member-card button {
+  width: 100%;
+  padding: 5px 20px;
+  border: 1px solid #0d6efd;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Tablet styles (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .member-card {
+    padding: 15px;
+  }
+
   .member-card img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
   }
-  
+
   .member-card h3 {
-    margin: 10px 0 5px;
+    margin: 8px 0 4px;
+    font-size: 1.1em;
   }
-  
+
   .member-card p {
-    color: #86a2ee;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-size: 0.9em;
   }
-  /* p:nth-of-type(3){
-    color: #eece70;
-    margin-bottom: 20px;
-  } */
-  
+
   .member-card button {
-    width: -webkit-fill-available;
-    padding: 5px 20px;
-    border: 1px solid #0d6efd;
-    background-color: #fff;
-    color: #000;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 0.9em;
   }
-  @media only screen and (max-width: 768px) {
-    .member-card {
-      padding: 15px;
-    }
-  
-    .member-card img {
-      width: 50px;
-      height: 50px;
-    }
-  
-    .member-card h3 {
-      margin: 8px 0 4px;
-      font-size: 1.1em;
-    }
-  
-    .member-card p {
-      margin-bottom: 15px;
-      font-size: 0.9em;
-    }
-  
-    .member-card button {
-      padding: 8px 16px;
-      font-size: 0.9em;
-    }
+
+  /* For grid layout, adjust the number of columns */
+  .members-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
+}
+
+/* Mobile styles (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  .member-card {
+    margin-bottom: 20px;
+    padding: 20px !important;
+}
   
-  @media only screen and (max-width: 480px) {
-    .member-card {
-      padding: 10px;
-    }
-  
-    .member-card img {
-      width: 40px;
-      height: 40px;
-    }
-  
-    .member-card h3 {
-      margin: 6px 0 3px;
-      font-size: 1em;
-    }
-  
-    .member-card p {
-      margin-bottom: 10px;
-      font-size: 0.85em;
-    }
-  
-    .member-card button {
-      padding: 6px 12px;
-      font-size: 0.85em;
-    }
+
+  .member-card img {
+    width: 40px;
+    height: 40px;
   }
-  
+
+  .member-card h3 {
+    margin: 6px 0 3px;
+    font-size: 1em;
+  }
+
+  .member-card p {
+    margin-bottom: 10px;
+    font-size: 0.85em;
+  }
+
+  .member-card button {
+    padding: 6px 12px;
+    font-size: 0.85em;
+  }
+
+  /* Stack grid items vertically for small screens */
+  .members-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

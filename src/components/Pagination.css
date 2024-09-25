@@ -23,6 +23,7 @@
   }
   @media only screen and (max-width: 768px) {
     .pagination {
+      margin-top: 0rem;
       flex-direction: column;
       align-items: flex-start;
       gap: 10px;

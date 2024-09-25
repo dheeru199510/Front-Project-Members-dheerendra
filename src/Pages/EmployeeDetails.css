@@ -1,3 +1,4 @@
+/* Base styles */
 .employee-details {
     display: flex;
     background-color: #fff;
@@ -9,7 +10,8 @@
 .header h2 {
     margin-top: 20px;
 }
-.part1{
+
+.part1 {
     flex-direction: row;
     display: flex;
     justify-content: space-between;
@@ -20,8 +22,6 @@
     justify-content: space-between;
     padding: 0px 0px 30px;
     background-color: #fff;
-   
-
 }
 
 .employee-card {
@@ -64,7 +64,6 @@
     text-align: center;
     padding: 50px 50px;
     border: 1px solid #e9ecef;
-
 }
 
 .status-summary {
@@ -72,13 +71,11 @@
     border: 1px solid #e9ecef;
     border-radius: 10px;
     display: flex;
-
 }
 
 .sum1 {
     flex: 1;
     padding: 30px 50px;
-
 }
 
 .sum2 {
@@ -89,7 +86,6 @@
 }
 
 .task-overview {
-
     margin-top: 40px;
 }
 
@@ -113,54 +109,103 @@
     padding: 20px 0px;
 }
 
-.task-column .div1 {
-    background-color: #fff;
-    color: #000;
+.task-column .div1, .div2, .div3 {
     padding: 10px;
     border: 1px solid #e9ecef;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
-.task-column .div2 {
-    background-color: #efffef;
-    color: #27b171;
-    padding: 10px;
-    border: 1px solid #e9ecef;
-    border-radius: 5px;
-    margin-bottom: 10px;
+.task-column .div1 { background-color: #fff; color: #000; }
+.task-column .div2 { background-color: #efffef; color: #27b171; }
+.task-column .div3 { background-color: #fff7f7; color: #000; }
+
+.high { background-color: #f7cace; color: #f96574; }
+.medium { background-color: #f7e8ba; color: #ffc107; }
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+    .employee-details, .part1, .employee-card, .employee-stats, .status-summary {
+        flex-direction: column;
+    }
+
+    .employee-details {
+        padding: 15px;
+    }
+
+    .employee-photo {
+        height: 80px;
+        margin-bottom: 15px;
+    }
+
+    .badge {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+
+    .employee-stats, .ratings, .status-summary, .sum1, .sum2 {
+        padding: 20px;
+        gap: 1rem;
+    }
+
+    .task-columns {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .task-column {
+        width: 100%;
+    }
+
+    .task-column h4 {
+        font-size: 14px;
+        padding: 15px 0;
+    }
+
+    .task-column .div1, .div2, .div3 {
+        padding: 8px;
+        font-size: 0.9em;
+    }
 }
 
-.task-column .div3 {
-    background-color: #fff7f7;
-    color: #000;
-    padding: 10px;
-    border: 1px solid #e9ecef;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
+@media only screen and (max-width: 480px) {
+    .employee-details, .part1, .employee-card, .employee-stats, .status-summary {
+        flex-direction: column;
+        padding: 10px;
+    }
 
-.task-column div p {
-    margin-bottom: 6px;
-    /* background-color: #fff;
-    padding: 10px;
-    border: 1px solid #e9ecef;
-    border-radius: 5px;
-    margin-bottom: 10px; */
-}
+    .employee-photo {
+        height: 60px;
+        margin-bottom: 10px;
+    }
 
-.task-column div p span {
+    .badge {
+        font-size: 9px;
+        padding: 2px 6px;
+    }
 
-    margin-right: 20px;
+    .employee-stats, .ratings, .status-summary, .sum1, .sum2 {
+        padding: 15px;
+        gap: 0.5rem;
+    }
 
-}
+    .task-columns {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-.high {
-    background-color: #f7cace;
-    color: #f96574;
-}
+    .task-column {
+        width: 100%;
+        padding: 15px;
+    }
 
-.medium {
-    background-color: #f7e8ba;
-    color: #ffc107;
+    .task-column h4 {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+
+    .task-column .div1, .div2, .div3 {
+        padding: 6px;
+        font-size: 0.8em;
+    }
 }
