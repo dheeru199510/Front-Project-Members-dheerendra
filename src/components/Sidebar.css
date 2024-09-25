@@ -1,0 +1,38 @@
+.sidebar {
+  width: 240px;
+  background-color: #ffffff;
+  padding: 10px;
+  /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); */
+  border: 1px solid #e9ecef;
+}
+
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-list li {
+  margin: 15px 0;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  display: block;
+  border-radius: 5px;
+}
+
+/* .menu-list li a.active,
+.menu-list li a:hover {
+  background-color: #e0f7fa;
+  color: #007bff;
+} */
+
+.addClass{
+   background-color: #e0f7fa;
+  color: #007bff;
+
+}

@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #e9eef3;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+ 
+  display: flex;
+  grid-gap: 20px;
+  gap: 20px;
+  
+}
+.header h2{
+  margin-top: 20px;
+}
+
+.header-left h2 {
+
+}
+
+
+.search-bar {
+  width: 200px;
+  height: 45px;
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  margin-right: 15px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
